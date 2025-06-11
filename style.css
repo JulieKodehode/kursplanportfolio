@@ -126,6 +126,10 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.bold {
+	font-weight: bold;
+}
+
 .portrait {
 	height: 60%;
 	width: 60%;
