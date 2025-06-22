@@ -53,7 +53,7 @@
 }
 
 /* MOBILE S (max-width: 426px) */
-@media (min-width: 319px) and (max-width: 426px) {
+@media (min-width: 100px) and (max-width: 426px) {
 	.header {
 		align-items: flex-start;
 		padding: 1em;
@@ -92,12 +92,5 @@
 	/* ANIMATION SECTION */
 	.animationMain {
 		flex-direction: column;
-	}
-}
-
-/* BELOW MOBILE S (max-width: 426px) */
-@media (max-width: 319px) {
-	* {
-		display: none;
 	}
 }
