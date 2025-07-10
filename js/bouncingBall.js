@@ -3,22 +3,23 @@ const bounceAnimationStartButton = document.querySelector("#bounceAnimationStart
 const bounceAnimationPauseButton = document.querySelector("#bounceAnimationPauseButton");
 const bounceAnimationResetButton = document.querySelector("#bounceAnimationResetButton");
 
-// Start the animation
-bounceAnimationStartButton.addEventListener("click", () => {
-  bounceAnimationCircle.style.animationPlayState = "running";
-});
+// Function to handle animation state change
+function handleAnimationState(action) {
+  if (action === "start") {
+    bounceAnimationCircle.style.animationPlayState = "running";
+  } else if (action === "pause") {
+    bounceAnimationCircle.style.animationPlayState = "paused";
+  } else if (action === "reset") {
+    bounceAnimationCircle.style.animation = "none";
+    void bounceAnimationCircle.offsetWidth;
+    bounceAnimationCircle.style.animation = "bounce 2s infinite ease-in-out";
+    bounceAnimationCircle.style.animationPlayState = "paused";
+  };
+};
 
-// Pause the animation
-bounceAnimationPauseButton.addEventListener("click", () => {
-  bounceAnimationCircle.style.animationPlayState = "paused";
-});
+// Add event listeners to buttons
+bounceAnimationStartButton.addEventListener("click", () => handleAnimationState("start"));
+bounceAnimationPauseButton.addEventListener("click", () => handleAnimationState("pause"));
+bounceAnimationResetButton.addEventListener("click", () => handleAnimationState("reset"));
 
-// Reset the animation
-bounceAnimationResetButton.addEventListener("click", () => {
-  bounceAnimationCircle.style.animation = "none";
-  void bounceAnimationCircle.offsetWidth;
-
-  // Restart the animation
-  bounceAnimationCircle.style.animation = "bounce 2s infinite ease-in-out";
-  bounceAnimationCircle.style.animationPlayState = "paused";
-});
+export {handleAnimationState};

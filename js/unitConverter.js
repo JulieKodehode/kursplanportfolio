@@ -42,8 +42,10 @@ function unitConverterApplication() {
 	}
 	// Set the result to be showed with unit value on page
 	displayUnitResult.textContent = `${result} ${toUnitValue}`;
-}
+};
 
 // Event Listener: Trigger the conversion function when the button is clicked
 const convertUnitButton = document.querySelector("#convertUnitButton");
 convertUnitButton.addEventListener("click", unitConverterApplication);
+
+export { unitConverterApplication };
