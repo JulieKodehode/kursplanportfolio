@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- BROWSER -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- TAB -->
+	<title>Feedback Form</title>
+	<link rel="shortcut icon" href="../../images/html.ico" type="image/x-icon" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- JAVASCRIPT -->
+	<script type="module" src="script.js"></script>
+</head>
+
+<body>
+	<form id="multiStepForm">
+		<!-- STEP 1 -->
+		<div id="step1" class="step">
+			<h2>Step 1</h2>
+			<label for="name">Name:</label>
+			<input type="text" id="name" />
+			<!-- "Next" button with the class "next-btn" for addEventListener-->
+			<button type="button" class="next-btn">Next</button>
+		</div>
+
+		<!-- STEP 2 -->
+		<div id="step2" class="step hidden">
+			<h2>Step 2</h2>
+			<label for="email">Email:</label>
+			<input type="email" id="email" />
+			<!-- "Previous" and "Next" buttons with the classes "prev-btn" and "next-btn" for addEventListener -->
+			<button type="button" class="prev-btn">Previous</button>
+			<button type="button" class="next-btn">Next</button>
+		</div>
+
+		<!-- STEP 3 -->
+		<div id="step3" class="step hidden">
+			<h2>Step 3</h2>
+			<label for="message">Message:</label>
+			<textarea id="message"></textarea>
+			<!-- "Previous" and "Next" buttons with the classes "prev-btn" and "next-btn" for addEventListener -->
+			<button type="button" class="prev-btn">Previous</button>
+			<button type="button" class="next-btn">Next</button>
+		</div>
+
+		<!-- STEP 4 -->
+		<div id="step4" class="step hidden">
+			<h2>Thank You!</h2>
+			<p>Thank you for submitting the form.</p>
+		</div>
+	</form>
+</body>
+
+</html>

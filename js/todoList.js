@@ -1,5 +1,10 @@
 // Function to add a task to the list
-function todoApplication() {
+function todoApplication(event) {
+	// Prevent form submission or any other default behavior (for Enter key event)
+	if (event && event.key === "Enter") {
+		event.preventDefault();
+	}
+
 	// Retrieve the value from the input field and trim any extra spaces
 	const inputTodoTaskValue = document.querySelector("#inputTodoTask").value.trim();
 	// Get the list element where tasks will be appended
@@ -60,7 +65,7 @@ function todoApplication() {
 
 	// Append the new list item (with buttons) to the task list
 	todoTaskList.appendChild(todoListItem);
-}
+};
 
 // Set up event listeners for adding tasks
 const addTodoTaskButton = document.querySelector("#addTodoTaskButton");
@@ -70,6 +75,8 @@ addTodoTaskButton.addEventListener("click", todoApplication);
 // Add event listener to the document to allow task addition using the Enter key
 document.addEventListener("keydown", (event) => {
 	if (event.key === "Enter") {
-		todoApplication();
+		todoApplication(event);
 	}
 });
+
+export { todoApplication };

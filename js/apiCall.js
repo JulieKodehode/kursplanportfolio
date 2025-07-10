@@ -12,10 +12,13 @@ async function fetchCatFact() {
 		const catFact = document.querySelector("#catFact");
 		catFact.textContent = data.fact;
 	} catch (error) {
+		// Sending an error message if something goes wrong in try...
 		console.error("Error:", error);
-	}
-}
+	};
+};
 
 // Call the fetchCatFact function when the button is clicked
 const factButton = document.querySelector("#factButton");
 factButton.addEventListener("click", fetchCatFact);
+
+export { fetchCatFact };
