@@ -16,11 +16,6 @@
 	align-items: center;
 }
 
-label {
-	display: inline-flex;
-	flex-direction: column;
-}
-
 /* Input and Button Styling */
 .inputTodoTask {
 	padding: 10px;

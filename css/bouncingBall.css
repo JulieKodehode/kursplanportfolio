@@ -1,9 +1,18 @@
-.bounceAnimationContainer {
+.bounceAnimation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
+}
+
+.bounceAnimationContainer {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  border-bottom: 3px solid black;
+  border-radius: 3%;
 }
 
 .bounceAnimationCircle {
@@ -15,20 +24,10 @@
   animation-play-state: paused;
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(200px); /* Move the bounceAnimationCircle down by 200px */
-  }
-}
-
 .bounceAnimationControls {
-   display: flex;
-   align-items: center;
-   gap: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .bounceAnimationButton {
@@ -36,4 +35,17 @@
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(297px);
+  }
+
+  50% {
+    transform: translateY(0px);
+    /* Move the bounceAnimationCircle down by 200px */
+  }
 }
