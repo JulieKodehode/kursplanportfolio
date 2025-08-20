@@ -6,5 +6,4 @@
 @import url(./css/todoList.css);
 @import url(./css/unitConverter.css);
 @import url(./css/general.css);
-/* Må være nederst */
-@import url(./css/mediaQuery.css);
+@import url(./css/mediaQuery.css); /*Må være nederst*/
