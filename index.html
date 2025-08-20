@@ -12,7 +12,7 @@
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="/style.css" />
-		
+
 		<!-- JAVASCRIPT -->
 		<script type="module" src="script.js"></script>
 	</head>
@@ -79,56 +79,45 @@
 						<div class="projectCard">
 							<h3>Parallax</h3>
 							<a href="projects/parallaxScrollEffect/index.html" target="_blank">
-								<img class="projectImg" src="/images/parallax.png"
-									alt="Preview of liked parallax site" />
+								<img class="projectImg" src="/images/parallax.png" alt="Preview of liked parallax site" />
 							</a>
-							<p>
-								I dette prosjektet har jeg prøvd med på scroll effekten
-								parallax for å lage dybde i nettsiden med å ha statiske
-								bilder og illusjonen av at tekst boksene flyter i
-								fremgrunnen.
-							</p>
+							<p>I dette prosjektet har jeg prøvd med på scroll effekten parallax for å lage dybde i nettsiden med å ha statiske bilder og illusjonen av at tekst boksene flyter i fremgrunnen.</p>
 						</div>
 
 						<!-- Grid Gallery -->
 						<div class="projectCard">
 							<h3>Gallery</h3>
 							<a href="/projects/gridGallery/index.html" target="_blank">
-								<img class="projectImg" src="/images/gallery.png"
-									alt="Preview of linked gallery site" />
+								<img class="projectImg" src="/images/gallery.png" alt="Preview of linked gallery site" />
 							</a>
-							<p>I dette prosjektet har jeg fokusert på å bruke grid-metoden
-								for plassering for å gjøre nettsiden responsiv i fire
-								forskjellige størrelser. Jeg har også eksperimentert med å
-								skape bakgrunnsdetaljer som fremhever bildene.</p>
+							<p>I dette prosjektet har jeg fokusert på å bruke grid-metoden for plassering for å gjøre nettsiden responsiv i fire forskjellige størrelser. Jeg har også eksperimentert med å skape bakgrunnsdetaljer som fremhever bildene.</p>
 						</div>
 
 						<!-- Multi Step Form -->
 						<div class="projectCard">
 							<h3>Sign-up form</h3>
 							<a href="projects/multiStepForm/index.html" target="_blank">
-								<img class="projectImg" src="./images/multistepform.png"
-									alt="Preview of linked multi-step form site" />
+								<img class="projectImg" src="./images/multistepform.png" alt="Preview of linked multi-step form site" />
 							</a>
-							<p>
-								I dette prosjektet har jeg fokusert på JavaScript for å
-								sette opp et sign-up form som går gjennom fire steg som
-								sjekker etter korrekt utfylling før neste steg vises. Dette
-								er kun et demonstrasjonsskjema, så utfyllingen lagres ikke.
-							</p>
+							<p>I dette prosjektet har jeg fokusert på JavaScript for å sette opp et sign-up form som går gjennom fire steg som sjekker etter korrekt utfylling før neste steg vises. Dette er kun et demonstrasjonsskjema, så utfyllingen lagres ikke.</p>
 						</div>
 					</div>
 				</div>
 			</section>
 
 			<!-- Animasjoner -->
-			<section id="animation" | class="section project">
-				<h2>Animasjons prosjekter</h2>
-				<main class="animationMain">
-					<!-- ANIMATION ON TEXT -->
+			<section id="animation" | class="section flexRowCenter">
+				<div class="introduction flexColCenter halfScreen">
+					<h2>Animasjons prosjekter</h2>
+					<p>Et av temaene vi skal innom i løpet av kurset er <span class="bold">animasjoner og overganger</span> som gir oss muligheten til å lage liv og spenning på nettsidene våres.</p>
+				</div>
+
+				<div class="halfScreen flexColCenter">
+					<!-- ANIMATION ON TEXT
 					<div class="nameAnimationContainer">
 						<h2 class="nameAnimationText">Julie</h2>
 					</div>
+					-->
 
 					<!-- ANIMATION ON ELEMENT-->
 					<div class="bounceAnimation">
@@ -142,23 +131,21 @@
 							<button id="bounceAnimationResetButton" class="bounceAnimationButton">Reset</button>
 						</div>
 					</div>
-				</main>
+				</div>
 			</section>
 
 			<!-- Målenhetkonventerer -->
-			<section id="unitconverter" class="section project">
-				<h2>Målenhet Konverterer Prosjekt</h2>
-				<main class="project4">
-					<h4>Enhet konverterer</h4>
+			<section id="unitconverter" class="section flexRowCenter">
+				<div class="halfScreen flexColCenter">
 					<label for="input" class="inputLabel">Skriv en verdi
 						<input type="number" id="unitInput" class="input" />
 					</label>
 
 					<div class="convertDiv">
 						<div class="convertValueDiv">
-							<label for="fromUnitValue" class="convertLabel">Fra:
-								<select name="fromUnitValue" id="fromUnitValue"
-									class="convertSelect">
+							<label for="fromUnitValue" class="convertLabel">
+								Fra:
+								<select name="fromUnitValue" id="fromUnitValue" class="convertSelect">
 									<option value="MM">MM</option>
 									<option value="CM">CM</option>
 									<option value="M">M</option>
@@ -167,7 +154,8 @@
 							</label>
 						</div>
 						<div class="convertValueDiv">
-							<label for="toUnitValue" class="convertLabel">Til:
+							<label for="toUnitValue" class="convertLabel">
+								Til:
 								<select name="toUnitValue" id="toUnitValue"
 									class="convertSelect">
 									<option value="MM">MM</option>
@@ -179,45 +167,54 @@
 						</div>
 					</div>
 
-					<button id="convertUnitButton"
-						class="convertButton">Konverter</button>
+					<button id="convertUnitButton" class="convertButton">Konverter</button>
 					<p id="displayUnitResult" class="result"></p>
-				</main>
+				</div>
+
+				<div class="introduction flexColCenter halfScreen">
+					<h2>Målenhet Konverterer Prosjekt</h2>
+					<p>Et av temaene vi skal innom i løpet av kurset er <span class="bold">JavaScript</span> som gir oss mulighet..</p>
+				</div>
 			</section>
 
 			<!-- Gjøremålsliste -->
-			<section id="todolist" class="section project">
-				<h2>Gjøremålsliste prosjekt</h2>
-				<main class="project5">
-					<h4>Gjøremål liste</h4>
-					<label for="inputTodoTask">Skriv gjøremålet</label>
-					<div>
-						<input type="text" id="inputTodoTask" />
-						<button id="addTodoTaskButton">Legg til gjøremålet</button>
-					</div>
-					<ul id="todoTaskList"></ul>
-				</main>
+			<section id="todolist" class="section flexRowCenter">
+				<div class="introduction flexColCenter halfScreen">
+					<h2>Gjøremålsliste</h2>
+					<p>Et av temaene vi skal innom i løpet av kurset er <span class="bold">JavaScript</span> som gir oss mulighet..</p>
+				</div>
+
+				<div class="flexColCenter halfScreen">
+					<label for="inputTodoTask">
+						Skriv et gjøremål
+						<input type="text" id="inputTodoTask" class="inputTodoTask" />
+					</label>
+					<button id="addTodoTaskButton" class="addTodoTaskButton">Legg til gjøremålet</button>
+					<ul id="todoTaskList" class="todoTaskList"></ul>
+				</div>
 			</section>
 
 			<!-- API-kall -->
-			<section id="apicall" class="section project">
-				<h2>API-data prosjekt</h2>
-				<main class="project7">
+			<section id="apicall" class="section flexRowCenter">
+				<div class="flexColCenter halfScreen">
 					<div class="factDiv">
 						<h3 class="factHeading">Fact:</h3>
 						<p id="catFact" class="catFact"></p>
 					</div>
 					<button id="factButton" class="factButton">New fact</button>
-				</main>
+				</div>
+
+				<div class="introduction flexColCenter halfScreen">
+					<h2>API-kall</h2>
+					<p>Et av temaene vi skal innom i løpet av kurset er <span class="bold">JavaScript</span> som gir oss mulighet..</p>
+				</div>
 			</section>
 		</main>
 
 		<!-- FOOTER -->
 		<footer class="footer">
+			<a href="https://github.com/juliekodehode">Sjekk ut min <img src="images/github-sign.png" alt="github icon" /> for flere prosjekter.</a>
 			<h4>Laget av Julie Hauge</h4>
-			<a href="https://github.com/juliekodehode">
-				<img src="images/github-sign.png" alt="github icon" />
-			</a>
 		</footer>
 	</body>
 </html>
