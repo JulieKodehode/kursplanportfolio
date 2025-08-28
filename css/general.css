@@ -175,11 +175,15 @@
 	align-items: center;
  }
  
- /* ANIMATION SECTION */
+ /* ALL SECTION */
  .projectDescription {
 	background-color: var(--primaryColor);
 	height: 100vh;
  }
+
+.projectDescriptionText {
+	width: 70%;
+}
  
  /* FOOTER */
  .footer {
