@@ -176,9 +176,9 @@
  }
  
  /* ANIMATION SECTION */
- .introduction {
+ .projectDescription {
 	background-color: var(--primaryColor);
-	height: 80vh;
+	height: 100vh;
  }
  
  /* FOOTER */
